@@ -26,11 +26,14 @@
         <nav class="bg-gray-800 shadow-md py-2">
             <div class="container mx-auto md:px-0">
                 <div class="flex items-center justify-around">
-                    <a class="text-2xl text-white" href="{{ url('/home') }}">
+                    <a class="text-2xl text-white" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
 
                     <nav class="flex-1 text-right text-white">
+                        <a class="no-underline hover:underline hover:text-gray-400 p-3" href="{{ url('/user') }}">
+                        User
+                        </a>
                         @guest
                         @if (Route::has('login'))
                         <a class="no-underline hover:underline hover:text-gray-400 p-3" href="{{ route('login') }}">{{ __('Login') }}</a>

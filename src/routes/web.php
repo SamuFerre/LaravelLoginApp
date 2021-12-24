@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Auth::routes(['verify' => true]);
+// Auth::routes(['verify' => true]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/user/{id}/edit', [App\Http\Controllers\Auth\EditController::class, 'edit'])->name('user.edit');
-Route::put('/user/{id}', [App\Http\Controllers\Auth\EditController::class, 'update'])->name('user.update');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/user/{id}/edit', [App\Http\Controllers\Auth\EditController::class, 'edit'])->name('user.edit');
+// Route::put('/user/{id}', [App\Http\Controllers\Auth\EditController::class, 'update'])->name('user.update');

@@ -30,7 +30,7 @@ class EditController extends Controller {
          $user= User::find($id);
          $user->fill($request->all());
          $user->save();
-        return redirect::to('/home');
+        return redirect::to('/user');
          
     }
     /**
